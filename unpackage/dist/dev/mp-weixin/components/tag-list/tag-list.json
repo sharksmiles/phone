@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-grid": "/node-modules/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/node-modules/uview-ui/components/u-grid-item/u-grid-item"
+  }
+}

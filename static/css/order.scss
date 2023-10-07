@@ -1,0 +1,125 @@
+.order-list{
+	background: #ffffff;
+	-webkit-box-shadow: 3px -2px 17px 0 hsla(0,0%,91%,.5);
+	box-shadow: 3px -2px 17px 0 hsla(0,0%,91%,.5);
+	border-radius: 10px;
+	width: 95%;
+	margin: 0 auto;
+	font-size: 12px;
+	
+	.avatar-img{
+		position: relative;
+		border-radius: 10rpx;
+	}
+	.listTop {
+		min-height: 75px;
+		
+		.listTitle{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			line-clamp: 2;
+			.online{
+				width: 50px;
+				font-size: 12px;
+				display: inline-block;
+				text-align: center;
+				margin-right: 8px;
+				height: 20px;
+				line-height: 20px;
+				background: #e1f2eb;
+				border-radius: 5px;
+				font-weight: 400;
+				color: #61c9f0;
+				position: relative;
+			}
+		}
+		.listText{
+			.listCon{
+				span{
+					background: rgba(255, 238, 213, 1.0);
+					border-radius: 9px;
+					color: rgba(46, 44, 43, 1.0);
+					text-align: center;
+					padding: 1px 5px;
+				}
+				.tagMZ{
+					color: #fff!important;
+					display: inline-block!important;
+					padding: 1px 5px!important;
+					background: linear-gradient(221deg,#ffb637,#ffda88) !important;
+				}
+			}
+			.userId {
+				color: #666;
+			}
+			.order-list-cost{
+				color: #fa7e12;
+				.h, .d, .m{
+					margin-right: 6px;
+					.price{
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 600;
+					}
+				}
+				
+			}
+			.rentalsNum{
+				background: rgba(250,126,18,.1);
+				border-radius: 8px;
+				color: #f6790c;
+				line-height: 14px;
+				display: inline-block;
+				padding: 1pt 5pt;
+			}
+		}
+	}
+	.listBot{
+		
+	}
+}
+
+.order-parameter{
+	width: 95%;
+	margin: 0 auto;
+	
+	font-size: 14px;
+	font-weight: 600;
+	
+	.cumulative{
+		font-size: 20px;
+		color: #333;
+		font-weight: 700;
+		.order-number {
+			font-size: 20px;
+			color: #fa7e12;
+			font-weight: 700;
+		}
+	}
+	.desc{
+		color: #999;
+	}
+	.click-right-em{
+		font-style: normal;
+		font-weight: normal;
+		text-align: right;
+		font-size: 12px;
+		float: right;
+		background: rgba(87,189,162,.1);
+		border-radius: 8px;
+		padding: 0 10px;
+		color: #61c9f0;
+	}
+}
+
+.btn-fixed-bottom {
+    position: fixed;
+    bottom: 40rpx;
+    width: 90%;
+    left: 0;
+	right: 0;
+	margin: 0 auto;
+    background: #fafafa!important;
+}

@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "代练",
+  "enablePullDownRefresh": false,
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#00aaff",
+  "usingComponents": {
+    "u-row": "/node-modules/uview-ui/components/u-row/u-row",
+    "u-col": "/node-modules/uview-ui/components/u-col/u-col",
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search",
+    "filter-dropdown": "/components/filter-dropdown/filter-dropdown",
+    "tag-list": "/components/tag-list/tag-list",
+    "u-grid": "/node-modules/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/node-modules/uview-ui/components/u-grid-item/u-grid-item",
+    "u-gap": "/node-modules/uview-ui/components/u-gap/u-gap",
+    "rent-list": "/components/rent-list/rent-list"
+  }
+}

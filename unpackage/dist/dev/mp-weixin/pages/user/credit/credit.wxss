@@ -1,0 +1,34 @@
+
+.m-t-20{
+	    color: rgb(153, 153, 153);
+		    margin-top: 20px!important;
+			font-size: 14px;
+}
+._ul>._li{
+	padding: 5px;
+}
+.credit-content {
+	    margin: 20px;
+	background: #fff;
+	border-radius: 10px;
+	font-size: 14px;
+}
+.credit-item {
+	width: 110px;
+	height: 30px;
+	background: #000;
+	
+	font-size: 16px;
+	font-weight: 600;
+	color: #57bda2;
+	line-height: 30px;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+.top {
+	margin-top: 50px;
+	height: 260px;
+	text-align: center;
+	font-weight: 600;
+}
+

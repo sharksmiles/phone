@@ -1,0 +1,23 @@
+{
+  "navigationBarTitleText": "发布账号",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#00aaff",
+  "usingComponents": {
+    "u-top-tips": "/node-modules/uview-ui/components/u-top-tips/u-top-tips",
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "u-line-progress": "/node-modules/uview-ui/components/u-line-progress/u-line-progress",
+    "u-form": "/node-modules/uview-ui/components/u-form/u-form",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u-divider": "/node-modules/uview-ui/components/u-divider/u-divider",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-radio-group": "/node-modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/node-modules/uview-ui/components/u-radio/u-radio",
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+    "u-upload": "/node-modules/uview-ui/components/u-upload/u-upload",
+    "u-switch": "/node-modules/uview-ui/components/u-switch/u-switch",
+    "u-number-box": "/node-modules/uview-ui/components/u-number-box/u-number-box",
+    "u-select": "/node-modules/uview-ui/components/u-select/u-select"
+  }
+}

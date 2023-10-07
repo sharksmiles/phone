@@ -1,0 +1,26 @@
+{
+  "name": "@tencentcloud/tui-core",
+  "version": "0.0.3",
+  "description": "Tencent Cloud TUICore SDK for TUIKit",
+  "main": "index.js",
+  "keywords": [
+    "chat",
+    "real-time chat",
+    "messaging",
+    "Instant Messaging",
+    "IM",
+    "Tencent Cloud",
+    "Tencent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Tencent Cloud Terminal R&D Center",
+  "license": "ISC",
+  "dependencies": {
+    "@tencentcloud/chat": "^3.1.0",
+    "tim-profanity-filter-plugin": "^0.9.0",
+    "tim-upload-plugin": "^1.2.0"
+  }
+}

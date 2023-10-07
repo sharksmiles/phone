@@ -1,0 +1,61 @@
+.u-page {
+	padding-bottom: calc(var(--window-bottom));
+	height: auto;
+}
+
+.banner{
+	image{
+		border-radius: 10rpx;
+	}
+}
+.u-demo-block {
+	
+	padding-bottom: 20rpx;
+	.u-demo-block__content{
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+.pweiwan {
+	width: 100%;
+	height: 30px;
+	background: linear-gradient(90deg, #57bda2, #a1dbcd);
+	border-radius: 12px;
+	line-height: 30px;
+}
+
+
+.triangle {
+	margin: 3px 3px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 5px 0 5px;
+	border-color: #000 transparent transparent transparent;
+}
+
+.grid-text {
+	font-size: 14px;
+	color: #909399;
+	padding: 10rpx 0 20rpx 0rpx;
+	/* #ifndef APP-PLUS */
+	box-sizing: border-box;
+	/* #endif */
+}
+
+.gameName {
+	font-size: 20px;
+	color: #fb9338;
+	margin-left: 12px;
+	margin-right: 4px;
+	font-weight: 700;
+}
+
+
+.banner{
+	.image{
+		width: 95%;
+	}
+}

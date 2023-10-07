@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "信誉积分",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

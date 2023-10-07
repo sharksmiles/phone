@@ -1,0 +1,82 @@
+{
+  "pages": [
+    "pages/tabBar/rent",
+    "pages/tabBar/accompany",
+    "pages/tabBar/deputy",
+    "pages/tabBar/message",
+    "pages/tabBar/orderList",
+    "pages/tabBar/user",
+    "pages/user/login",
+    "pages/user/rent/release",
+    "pages/user/skill/release",
+    "pages/user/rent/list",
+    "pages/user/rent/statistics",
+    "pages/user/collect/collect",
+    "pages/user/credit/credit",
+    "pages/user/grade/grade",
+    "pages/home/home",
+    "pages/order/rent",
+    "pages/rent/details",
+    "pages/message/interaction/interaction",
+    "pages/order/rentDetail",
+    "pages/message/chat/chat",
+    "pages/message/chat/chat",
+    "pages/message/interaction/interaction",
+    "pages/user/grade/grade"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#00aaff",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#535353",
+    "selectedColor": "#57bda2",
+    "fontSize": "12px",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/rent",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home_active.png",
+        "text": "租号"
+      },
+      {
+        "pagePath": "pages/tabBar/accompany",
+        "iconPath": "static/icons/accompany.png",
+        "selectedIconPath": "static/icons/accompany_active.png",
+        "text": "陪玩"
+      },
+      {
+        "pagePath": "pages/tabBar/deputy",
+        "iconPath": "static/icons/menu.png",
+        "selectedIconPath": "static/icons/menu_active.png",
+        "text": "代练"
+      },
+      {
+        "pagePath": "pages/tabBar/message",
+        "iconPath": "static/icons/message.png",
+        "selectedIconPath": "static/icons/message_active.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/tabBar/orderList",
+        "iconPath": "static/icons/stats.png",
+        "selectedIconPath": "static/icons/stats_active.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/tabBar/user",
+        "iconPath": "static/icons/user.png",
+        "selectedIconPath": "static/icons/user_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "custom-navbar": "/components/customNavbar"
+  }
+}

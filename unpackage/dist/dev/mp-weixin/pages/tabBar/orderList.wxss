@@ -1,0 +1,82 @@
+.message-top.data-v-46656918 {
+  padding-bottom: calc(0px);
+  height: auto;
+}
+.message-content.data-v-46656918 {
+  background: rgba(87, 189, 162, 0.1);
+  border-radius: 9px;
+  color: #57bda2;
+  text-align: center;
+  padding: 1pt 5pt;
+  font-size: 12px;
+  box-sizing: inherit;
+}
+.listBot.data-v-46656918 {
+  font-size: 12px;
+  height: 43px;
+  line-height: 43px;
+  border-top: 1px solid #ebebeb;
+}
+.message-game.data-v-46656918 {
+  margin-top: 3px;
+  margin-left: 10px;
+  width: 60px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAAiCAMAAAC0jX24AAAAY1BMVEUAAAD/1WP/vUb/33v/vkf/33z/4Hz/33r/vUj/4H3/vUf/3nr/vEf/0F//33z/vkj/vkj/wUz/w1D/1Gv/xlT/12//3nr/0GX/3Hf/y13/2HL/yFf/0mj/z2L/zV//ylr/2nSTkUtQAAAAEHRSTlMACcvy8s/HsrJsbEFBG3l53+KDEQAAASlJREFUSMftlwtuwjAQRGeTkD+FAklpKW3vf8r6E3VqI2SB5JWQeBd4Glvj9QKQvqi2C68Lu4WD52T5trx7vgxny5vn07H3TI4Px4/h6Jjnuaw7gWFdGNU1I5WLk0bvvDRO15SO1RoQY0w5T1TSGcSk0koj5zFwCvr/wkh5uO1g94mD9XRgyMRd0smQBhqdM62sUdF3412e77hLQ4kw5DZS7lIpY2U65YxAyJheSGP6LuOUE5WhM0qZt5dUavWSSq1eUqndyxkiY6vXy2YQgWWj1csX/NHq9LIBGb0xdy8HENGZlwIiOr0UkFGnlwNIq9PLhsaNQi9ZEj4FmXvJp+A5L5/z8sHmZaX9jy1RaP9ja/TavewghW4vV8JlL/O85LLHlTZzL7nS/gJBC02z6ptHhwAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 60px;
+  text-align: center;
+  line-height: 17px;
+  height: 17px;
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+}
+.message-name.data-v-46656918 {
+  color: #76828c;
+  flex: 1;
+  padding-left: 10px;
+}
+.message-state.data-v-46656918 {
+  background: #ccc !important;
+  width: 50px;
+  height: 20px;
+  background: #57bda2;
+  border-radius: 10px 0 0 10px;
+  opacity: 0.9;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  font-size: 12px;
+}
+.interaction.data-v-46656918 {
+  padding: 12px 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+  background: #fff;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 3px -2px 15px 0 #e8e8e8;
+}
+.message.data-v-46656918 {
+  height: 7vh;
+}
+.message-list-item.data-v-46656918 {
+  margin-top: 30px !important;
+  margin-bottom: 18px;
+  margin-left: 20px;
+  white-space: nowrap;
+  width: 150px;
+  height: 42px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333;
+  line-height: 42px;
+  border-bottom: 6px solid #57bda2;
+}
+

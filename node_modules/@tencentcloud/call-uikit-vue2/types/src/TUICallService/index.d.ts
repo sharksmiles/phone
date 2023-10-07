@@ -1,0 +1,10 @@
+import { ITUIGlobal } from './interface/ITUIGlobal';
+import { ITUIStore } from './interface/ITUIStore';
+import { StoreName } from './const';
+import TUICallService from './CallService';
+import { NAME, CallRole, CallMediaType, CallStatus, StatusChange, VideoResolution, VideoDisplayMode } from './const';
+import { t } from './locales';
+declare const tuiGlobal: ITUIGlobal;
+declare const tuiStore: ITUIStore;
+declare const TUICallKitServer: TUICallService;
+export { tuiGlobal as TUIGlobal, tuiStore as TUIStore, StoreName, TUICallKitServer, NAME, CallStatus, CallRole, CallMediaType, StatusChange, VideoResolution, VideoDisplayMode, t, };

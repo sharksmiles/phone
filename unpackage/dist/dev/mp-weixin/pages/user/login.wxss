@@ -1,0 +1,31 @@
+.loginWrap .imgWrap {
+  text-align: center;
+  padding: 50rpx;
+}
+.loginWrap .loginForm .uni-form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #DCDCDC;
+  padding: 10rpx 30rpx;
+  margin: 20rpx;
+}
+.loginWrap .loginForm .uni-form-item u-input {
+  flex: 1;
+}
+.loginWrap .loginForm .uni-form-item .forgetText {
+  color: #C8C7CC;
+}
+.loginWrap .loginForm .wrap {
+  height: auto;
+}
+.loginWrap .loginForm .loginbtn {
+  margin: 20rpx;
+  margin-top: 60rpx;
+  background: #2CA800;
+  color: #fff;
+}
+.loginWrap .action {
+  padding: 10rpx 30rpx;
+}
+

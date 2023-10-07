@@ -1,0 +1,18 @@
+.imgs-font.data-v-52c37fa4 {
+  margin-top: 20px !important;
+  padding-left: 2vh;
+  display: inline-block;
+  font-size: 12px;
+}
+.imgs.data-v-52c37fa4 {
+  text-align: center;
+  border-radius: 20px;
+  width: 300px;
+  height: 179px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
