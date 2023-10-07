@@ -27,9 +27,9 @@
 							<span class="rentalsNum m-t-5">近期接单{{item.rentNum}}次</span>
 							<span v-if="item.is_gift == 1" class="tagMZ m-t-5">满赠</span>
 						</view>
-						<view class="listCon m-t-5">
-							<span class="rentalsNum m-t-5"
-								v-if="item.auth_text&&item.auth_label">{{item.auth_text}}:{{item.auth_label.join('、')}}</span>
+						<view class="listCon m-t-5" v-if="item.auth_label.length>0">
+							<span class="rentalsNum m-t-5" v-for="it in item.auth_label" :key="it"
+								style="margin-right: 5px;">{{it}}</span>
 						</view>
 
 						<view class="order-list-cost m-t-5">
@@ -139,15 +139,18 @@
 
 <style lang="scss">
 	.state {
-		background-image: url(/static/imgs/state-icon.png);
+		// background-image: url(/static/imgs/state-icon.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: absolute;
-		width: 70px;
-		height: 70px;
+		width: 100%;
+		height: 100%;
 		text-align: center;
-		line-height: 56px;
+		line-height: 100px;
 		color: #fff;
+		background-color: #000000;
+		opacity: 0.6;
+		z-index: 99;
 	}
 
 	.order-list {

@@ -136,7 +136,8 @@
 					</u-read-more>
 					<view class="m-t-10">
 						<u-swiper bg-color="transparent" height="500" :autoplay="false" v-if="data.images"
-							:effect3d="true" :list="data.images_url"></u-swiper>
+							:effect3d="true" :list="data.images_url" :current="imageIndex1"
+							@tap="previewImage1"></u-swiper>
 					</view>
 				</view>
 
@@ -239,6 +240,7 @@
 				soundShow: false,
 				commentTotal: 0,
 				imageIndex: 0,
+				imageIndex: 1,
 				beautiful: ''
 			}
 		},
@@ -287,6 +289,12 @@
 				}
 				this.$utils.playSound(this.data.userInfo.audio_path),
 					this.soundShow = true
+			},
+			previewImage1() {
+				uni.previewImage({
+					current: this.imageIndex1, //预览图片的下标
+					urls: this.data.images_url
+				})
 			},
 			previewImage() {
 				uni.previewImage({

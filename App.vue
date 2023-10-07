@@ -34,9 +34,12 @@
 					}
 				}
 			}
+			console.log(isMobile, 'isMobile', window.location.href, 'window.location.href')
 			if (!isMobile) {
-				if (window.location.href == 'https://www.jiutianzuhao.cn/h5/#/pc/index' || window.location.href ==
-					'https://www.jiutianzuhao.cn') {
+				let href = ['https://www.jiutianzuhao.cn/h5/#/', 'https://www.jiutianzuhao.cn/h5/#/pc/index',
+					'https://www.jiutianzuhao.cn'
+				]
+				if (href.includes(window.location.href)) {
 					uni.navigateTo({
 						url: '/pc/index'
 					});

@@ -5,7 +5,8 @@
 		<view class="good-frame">
 			<customNavbar title="商品详情" />
 			<view class="good-info">
-				<u-swiper height="500" :list="data.image_url" circular :autoplay="false" border-radius="0"></u-swiper>
+				<u-swiper height="500" :list="data.image_url" circular :autoplay="false" border-radius="0"
+					:current="imageIndex" @tap="previewImage"></u-swiper>
 				<view class="info p-b-10">
 					<h3 class="details-title m-t-10 p-l-r-10">
 						{{data.name}}
@@ -124,7 +125,8 @@
 						</u-read-more>
 						<view class="img" v-if="data.images">
 							<u-swiper bg-color="transparent" height="500" :autoplay="false" v-if="data.images"
-								:effect3d="true" :list="data.images_url"></u-swiper>
+								:effect3d="true" :list="data.images_url" :current="imageIndex1"
+								@tap="previewImage1"></u-swiper>
 
 						</view>
 					</view>
@@ -218,7 +220,9 @@
 				collect: false,
 				id: null,
 				commentTotal: 0,
-				releaseSelect: {}
+				releaseSelect: {},
+				imageIndex1: 0,
+				imageIndex: 0
 			}
 		},
 		onLoad(options) {
@@ -257,6 +261,18 @@
 					this.$utils.reLaunchLogin()
 				}
 			},
+			previewImage1() {
+				uni.previewImage({
+					current: this.imageIndex1, //预览图片的下标
+					urls: this.data.images_url
+				})
+			},
+			previewImage() {
+				uni.previewImage({
+					current: this.imageIndex, //预览图片的下标
+					urls: this.data.image_url
+				})
+			}
 		}
 
 	}

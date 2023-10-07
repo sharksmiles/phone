@@ -8,7 +8,7 @@
 		{
 			"path": "pages/tabBar/rent",
 			"style": {
-				"navigationBarTitleText": "租号",
+				"navigationBarTitleText": "九天租号-【现在0手续费挂号】剑网3专业游戏租号陪玩",
 				"enablePullDownRefresh": false,
 				"navigationBarTextStyle": "white",
 				"navigationBarBackgroundColor": "#00aaff",
@@ -491,7 +491,7 @@
 		"pages": [{
 				"path": "index",
 				"style": {
-					"navigationBarTitleText": "九天兵鉴-租号陪玩平台",
+					"navigationBarTitleText": "九天租号 -【现在0手续费挂号】剑网3专业游戏",
 					"app-plus": { // 隐藏系统导航栏
 						"titleNView": false
 					}
@@ -500,7 +500,7 @@
 			{
 				"path": "audio",
 				"style": {
-					"navigationBarTitleText": "九天兵鉴-租号陪玩平台",
+					"navigationBarTitleText": "九天租号 -【现在0手续费挂号】剑网3专业游戏",
 					"app-plus": { // 隐藏系统导航栏
 						"titleNView": false
 					}

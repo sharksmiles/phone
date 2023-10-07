@@ -71,14 +71,17 @@
 
 <style>
 	.state {
-		background-image: url(/static/imgs/state-icon.png);
+		/* background-image: url(/static/imgs/state-icon.png); */
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: absolute;
-		width: 70px;
-		height: 70px;
+		width: 100%;
+		height: 100%;
 		text-align: center;
-		line-height: 56px;
+		line-height: 100px;
 		color: #fff;
+		background-color: #000000;
+		opacity: 0.6;
+		z-index: 99;
 	}
 </style>
