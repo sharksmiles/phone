@@ -132,6 +132,14 @@
 						}
 					},
 					{
+						name: "推广中心",
+						icon: 'order',
+						fun(that) {
+							that.$utils.handleNavigate('/pages/user/promotionCenter')
+						}
+					},
+
+					{
 						name: "我的收藏",
 						icon: 'star',
 						fun(that) {

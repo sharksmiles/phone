@@ -66,6 +66,8 @@
 				}
 			}
 		},
+
+
 		{
 			"path": "pages/tabBar/user",
 			"style": {
@@ -212,6 +214,18 @@
 			}
 		},
 		{
+			"path": "pages/user/promotionCenter",
+			"style": {
+				"navigationBarTitleText": "推广中心",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": { // 隐藏系统导航栏
+					"titleNView": false
+				}
+			}
+		},
+
+		{
 			"path": "pages/finance/rechargeLog",
 			"style": {
 				"navigationBarTitleText": "充值记录",
@@ -282,6 +296,8 @@
 				"navigationStyle": "custom" //添加自定义配置
 			}
 		},
+
+
 		{
 			"path": "pages/account/accompany/detail",
 			"style": {
@@ -484,6 +500,7 @@
 				"navigationStyle": "custom" //添加自定义配置
 			}
 		}
+
 	],
 	"subPackages": [{
 		"root": "pc",

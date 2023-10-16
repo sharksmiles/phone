@@ -104,7 +104,7 @@
 					</view>
 				</u-dropdown-item>
 
-				<!-- 	<u-dropdown-item title="筛选">
+				<u-dropdown-item title="筛选">
 					<view class="slot-content" style="background-color: #FFFFFF;">
 						<view class="container">
 							<view class="filter-item">
@@ -160,8 +160,10 @@
 								<span class="btn btn-confirm" @click="confirm">确定</span>
 							</view>
 						</view>
+
 					</view>
-				</u-dropdown-item> -->
+
+				</u-dropdown-item>
 			</u-dropdown>
 		</view>
 	</u-sticky>
@@ -426,8 +428,9 @@
 
 			.footer-btn {
 				text-align: right;
-				padding-bottom: 20px;
-				padding-right: 20px;
+				padding-bottom: 10px;
+				padding-right: 10px;
+				margin-top: 5px;
 
 				.btn {
 					display: inline-block;
@@ -450,11 +453,10 @@
 
 		.footer-btn {
 			text-align: right;
-			padding-bottom: 20px;
-			padding-right: 20px;
-			position: absolute;
-			bottom: 0;
-			right: 0;
+
+			padding-bottom: 10px;
+			padding-right: 10px;
+			margin-top: 5px;
 
 			.btn {
 				display: inline-block;
