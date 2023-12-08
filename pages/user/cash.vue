@@ -253,6 +253,10 @@
 						}
 					})
 				} else if (type == 1) {
+					if (this.user.info.is_real == 1) {
+						this.$utils.handleNavigate("/pages/user/bindReal")
+						return
+					}
 					this.submitPay(type)
 				} else {
 					this.getFaceCheck('depositWithdrawal')

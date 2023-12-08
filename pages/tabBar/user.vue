@@ -133,7 +133,7 @@
 					},
 					{
 						name: "推广中心",
-						icon: 'order',
+						icon: 'share',
 						fun(that) {
 							that.$utils.handleNavigate('/pages/user/promotionCenter')
 						}

@@ -102,3 +102,31 @@ export function follow(friendId) {
 		method: 'GET',
 	})
 }
+export function getIntive(data) {
+	return request({
+		url: 'user/getIntive',
+		method: 'POST',
+		data
+	})
+}
+export function bindInative(data) {
+	return request({
+		url: 'user/bindInative',
+		method: 'POST',
+		data
+	})
+}
+export function intiveList(data) {
+	return request({
+		url: 'user/intiveList',
+		method: 'POST',
+		data
+	})
+}
+export function setRatio(data) {
+	return request({
+		url: 'user/setRatio',
+		method: 'POST',
+		data
+	})
+}

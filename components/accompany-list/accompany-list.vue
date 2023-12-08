@@ -150,7 +150,7 @@
 		color: #fff;
 		background-color: #000000;
 		opacity: 0.6;
-		z-index: 99;
+		z-index: 9;
 	}
 
 	.order-list {
@@ -167,6 +167,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: absolute;
+		z-index: 2;
 	}
 
 	.deposit {

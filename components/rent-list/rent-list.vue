@@ -82,6 +82,6 @@
 		color: #fff;
 		background-color: #000000;
 		opacity: 0.6;
-		z-index: 99;
+		z-index: 9;
 	}
 </style>

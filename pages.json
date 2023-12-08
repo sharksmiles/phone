@@ -259,6 +259,17 @@
 			}
 		},
 		{
+			"path": "pages/finance/userLog",
+			"style": {
+				"navigationBarTitleText": "邀请记录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": { // 隐藏系统导航栏
+					"titleNView": false
+				}
+			}
+		},
+		{
 			"path": "pages/order/create/rent",
 			"style": {
 				"navigationBarTitleText": "创建租号订单",

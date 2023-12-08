@@ -33,6 +33,9 @@
 							</span> -->
 							<span class="h">点击进入获取代练详情</span>
 						</div>
+						<view class="order-list-cost m-t-5 deposit" v-if="item.deposit">
+							保证金:{{item.deposit}}
+						</view>
 					</view>
 				</view>
 				<view class="listBot m-t-5" style="border-top: none; height: 30px; line-height: 30px;">

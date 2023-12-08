@@ -4,10 +4,6 @@
 			<u-dropdown @open="openEvent" @close="closeEvent" v-if="filter" ref="uDropdown">
 				<u-dropdown-item title="区服">
 					<view class="slot-content" style="background-color: #FFFFFF;">
-						<view class="footer-btn">
-							<span class="btn btn-delete" @click="reset">重置</span>
-							<span class="btn btn-confirm" @click="confirm">确定</span>
-						</view>
 						<view class="container">
 							<view class="filter-item">
 								<view v-for="(ritem, rindex) in filter.regional" class="regional m-b-10">
@@ -27,7 +23,10 @@
 									</view>
 								</view>
 							</view>
-
+							<view class="footer-btn">
+								<span class="btn btn-delete" @click="reset">重置</span>
+								<span class="btn btn-confirm" @click="confirm">确定</span>
+							</view>
 						</view>
 
 					</view>
@@ -110,24 +109,27 @@
 							<view class="filter-item">
 								<view class="more">
 									<view class="more-title">装备</view>
-									<view class="margin-bottom-20">
+									<view style="margin-top: 20rpx;">
 										<view class="name" v-for="(item, index) in filter.more.option1[0]"
 											:class="more_type.indexOf(item) > -1? 'active': ''"
 											@click="moreTypeClick(item)">
 											{{item}}
 										</view>
-										<view class="pvp-grade">
-											<view class="viewFlex">
-												<view class="viewFlex" style="align-self: center;">大于</view> <input
-													class="input" v-model="moreVal" type="number">
-											</view>
-										</view>
 									</view>
 									<view class="margin-bottom-20">
-										<view class="name" v-for="(item, index) in filter.more.option1[1]"
-											:class="more_type.indexOf(item) > -1? 'active': ''"
-											@click="moreTypeClick(item)">
-											{{item}}
+										<view v-for="(item, index) in filter.more.option1[1]">
+											<span @click="moreTypeClick(item)" class="name"
+												:class="more_type.indexOf(item) > -1? 'active': ''">
+												{{item}}
+											</span>
+											<view class="pvp-grade">
+												<view class="viewFlex">
+													<input class="input" v-model="moreVal[index]" type="number">
+													<view
+														style="align-self: center; width: 100rpx; margin-left: 10rpx;">
+														以上</view>
+												</view>
+											</view>
 										</view>
 									</view>
 									<block v-if="type == 1">
@@ -162,7 +164,6 @@
 						</view>
 
 					</view>
-
 				</u-dropdown-item>
 			</u-dropdown>
 		</view>
@@ -204,7 +205,7 @@
 				sortVal: null,
 				more_ids: [],
 				more_type: [],
-				moreVal: null,
+				moreVal: [],
 				subjectVal: null
 			}
 		},
@@ -244,7 +245,7 @@
 				this.sortVal = null
 				this.regional_ids = []
 				this.more_ids = []
-				this.moreVal = null
+				this.moreVal = []
 				this.subjectVal = null
 			},
 			query() {
@@ -256,6 +257,7 @@
 					more_ids: this.more_ids, // 筛选ids
 					sortVal: this.sortVal, // 排序规则
 					subjectVal: this.subjectVal, // 专题
+					moreVal: this.moreVal.join(','), //分数
 				}
 				return query;
 			},
@@ -390,8 +392,8 @@
 					.name {
 						display: inline-block;
 						margin-right: 10px;
-						background: #f5f5f5;
-						border-radius: 20px;
+						// background: #a2faed;
+						border-radius: 8rpx;
 						padding: 2px 10px;
 						color: #666;
 					}
@@ -400,21 +402,23 @@
 						display: inline-block;
 						margin-right: 10px;
 						background: #f5f5f5;
-						border-radius: 20px;
+						border-radius: 2px;
 						padding: 2px 10px;
 						margin-top: 10px;
 						color: #666;
-						width: 60%;
+						width: 80%;
 						background: none;
+
 
 						.input {
 							display: inline-block;
 							width: 100px;
 							height: 24px;
-							border-radius: 22px;
+							border-radius: 4px;
 							border: 1px solid #61c9f0;
-							margin-left: 10px;
-							padding: 0 10px
+							margin-left: 0px;
+							padding: 0 10px;
+							font-size: 25rpx;
 						}
 					}
 				}
@@ -431,12 +435,13 @@
 				padding-bottom: 10px;
 				padding-right: 10px;
 				margin-top: 5px;
+				padding-left: 20rpx;
 
 				.btn {
 					display: inline-block;
 					line-height: 26px;
 					padding: 0 15px;
-					border-radius: 15px;
+					border-radius: 10px;
 				}
 
 				.btn-delete {
@@ -452,11 +457,12 @@
 		}
 
 		.footer-btn {
-			text-align: right;
-
+			text-align: right !important;
 			padding-bottom: 10px;
 			padding-right: 10px;
 			margin-top: 5px;
+			padding-left: 20rpx;
+
 
 			.btn {
 				display: inline-block;

@@ -45,15 +45,17 @@
 					<text class="m-r-5">{{data.zoneName}}{{data.serverName}}</text>
 					<text class="m-r-5">{{data.schoolName}}/{{data.bodyName}}</text>
 				</p>
-				<!-- <view class="p-l-r-10 lable-commodity m-t-10">
-					<span class="p-l-5 m-r-5" style="color: #fa7e12;">
-						¥<span class="price">{{data.showHourRent}}</span>/时
+				<view class="p-l-r-10 m-t-10 viewFlex">
+					<img src="@/static/imgs/guarantee-icon.png" width="19" height="20" style="padding: 1pt 0pt;">
+					<span class="ensure m-r-10">
+						<text>保证金：{{data.userInfo.deposit}}</text>
 					</span>
-				</view> -->
+				</view>
 				<view class="lable-commodity p-l-r-10 m-t-10">
 					<text class="tag m-r-5">近期接单{{data.rentNum}}笔</text>
 					<text class="tag m-r-5">{{data.collectNum}}收藏</text>
 				</view>
+
 
 				<view v-if="data.userInfo.audio_path" class="voice-card bg-white m-t-10 p-l-r-10" @click="soundClick">
 					<view class="voice-bd">
@@ -566,5 +568,14 @@
 				margin-left: 206px;
 			}
 		}
+	}
+
+	.ensure {
+		background: rgba(108, 172, 231, .1);
+		border-radius: 8px 8px;
+		font-weight: 400;
+		color: #f6790c;
+		padding: 1pt 5pt;
+		font-size: 14px;
 	}
 </style>

@@ -4,6 +4,10 @@
 
 	export default {
 		onLaunch: function(options) {
+			var script = document.createElement('script');
+			script.src = "https://cn-shanghai-aliyun-cloudauth.oss-cn-shanghai.aliyuncs.com/web_sdk_js/jsvm_all.js";
+			document.head.appendChild(script);
+
 			this.$store.dispatch("game/list")
 			this.$store.dispatch("config/init")
 
@@ -21,8 +25,11 @@
 						"pages/training/detail",
 					];
 					if (paths.indexOf(options.path) == -1) {
+						console.log(this.$route.query.invite_code, '=====')
+						// http://localhost:8080/#/pages/user/login?invite_code=OC0vQa
+						let invite_code = this.$route.query.invite_code ? this.$route.query.invite_code : ""
 						uni.reLaunch({
-							url: "/pages/user/login",
+							url: "/pages/user/login?invite_code=" + invite_code
 						})
 						return
 					}

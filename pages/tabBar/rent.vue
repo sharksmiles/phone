@@ -120,7 +120,7 @@
 					},
 					more: {
 						option1: [
-							["cw", "jjc"],
+							["允许cw", "允许jjc"],
 							['PVP', "PVE"]
 						],
 						option2: []
